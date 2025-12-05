@@ -83,9 +83,9 @@ file	multipart/form-data	Изображение или PDF
 📌 1. Установка Python OCR ядра
 
 Установить зависимости:
-
+```text
 pip install -r python_core/requirements.txt
-
+```
 
 Установить Tesseract OCR:
 
@@ -96,19 +96,21 @@ Poppler для PDF:
 https://blog.alivate.com.au/poppler-windows/
 
 📌 2. Запуск Go-сервера
+```text
 cd backend
 go run main.go
-
+```
 
 Сервер будет доступен по адресу:
 
 http://localhost:8080
 
 📌 3. Запуск фронтенда
+```text
 cd frontend/ocr_app_frontend
 npm install
 npm run dev
-
+```
 
 Открыть:
 
