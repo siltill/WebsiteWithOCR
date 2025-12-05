@@ -1,0 +1,16 @@
+# node_modules
+frontend/ocr_app_frontend/node_modules/
+
+# dist (сборка)
+frontend/ocr_app_frontend/dist/
+
+# Python cache
+python_core/__pycache__/
+
+# Docker build cache
+*.tar
+*.log
+
+# OS files
+Thumbs.db
+.DS_Store

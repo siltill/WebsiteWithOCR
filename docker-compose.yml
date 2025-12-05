@@ -1,0 +1,22 @@
+version: "3.9"
+
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: backend.Dockerfile
+    container_name: ocr-backend
+    ports:
+      - "8080:8080"           # backend доступен с хоста (если надо)
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: .
+      dockerfile: frontend.Dockerfile
+    container_name: ocr-frontend
+    ports:
+      - "5173:80"             # фронт открывается на http://localhost:5173
+    depends_on:
+      - backend
+    restart: unless-stopped
