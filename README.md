@@ -58,7 +58,7 @@ docker compose up --build
 Frontend: http://localhost:5173
 
 Backend API: http://localhost:8080/api/upload
- (POST запросы)
+ (только POST запросы)
 
 🧪 API
 POST /api/upload
