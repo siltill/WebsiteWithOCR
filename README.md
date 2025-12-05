@@ -19,26 +19,27 @@
 
 📦 Готов к деплою на любом устройстве
 
-🧱 Архитектура проекта
-project-root/
+## Архитектура проекта
 
- ├── backend/              # Go-сервер
- │     └── main.go
- ├── python_core/          # OCR ядро на Python
- │     ├── main.py
- │     ├── ocr.py
- │     ├── preprocessing.py
- │     └── requirements.txt
- ├── frontend/
- │     └── ocr_app_frontend/  # Vue-фронтенд
- │             ├── src/
- │             ├── public/
- │             ├── package.json
- │             └── vite.config.js
- ├── backend.Dockerfile
- ├── frontend.Dockerfile
- ├── docker-compose.yml
- └── README.md
+```text
+project-root/
+├── backend/              # Go-сервер
+│   └── main.go
+├── python_core/          # OCR ядро на Python
+│   ├── main.py
+│   ├── ocr.py
+│   ├── preprocessing.py
+│   └── requirements.txt
+├── frontend/
+│   └── ocr_app_frontend/ # Vue-фронтенд
+│       ├── src/
+│       ├── public/
+│       ├── package.json
+│       └── vite.config.js
+├── backend.Dockerfile
+├── frontend.Dockerfile
+├── docker-compose.yml
+└── README.md
 
 🐳 Запуск через Docker
 1. Установить Docker Desktop
