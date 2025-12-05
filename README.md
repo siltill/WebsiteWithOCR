@@ -39,7 +39,7 @@ project-root/
  ├── docker-compose.yml
  └── README.md
 
-🐳 Запуск через Docker (рекомендуется)
+🐳 Запуск через Docker
 1. Установить Docker Desktop
 
 https://www.docker.com/products/docker-desktop/
@@ -111,72 +111,6 @@ npm run dev
 Открыть:
 
 http://localhost:5173
-
-🔧 Как передать приложение на другое устройство
-
-Есть два способа.
-
-✔ 1. Перенести проект и пересобрать Docker
-
-На новом устройстве:
-
-git clone https://github.com/<username>/WebsiteWithOCR.git
-cd WebsiteWithOCR
-docker compose up --build
-
-✔ 2. Перенести готовые Docker-образы (без сборки)
-
-Экспорт:
-
-docker save -o backend.tar ocrapp-backend
-docker save -o frontend.tar ocrapp-frontend
-
-
-Импорт на другом ПК:
-
-docker load -i backend.tar
-docker load -i frontend.tar
-docker compose up
-
-
-Этот способ самый быстрый для сдачи курсовой.
-
-🛠 Используемые технологии
-Backend:
-
-Go 1.22
-
-net/http
-
-exec для вызова Python
-
-OCR ядро:
-
-Python 3
-
-Tesseract OCR
-
-Poppler
-
-Pillow, PyTesseract и др.
-
-Frontend:
-
-Vue 3
-
-Vite
-
-Tailwind (если используется)
-
-Fetch API
-
-DevOps:
-
-Docker
-
-Docker Compose
-
-Nginx (для фронта)
 
 👨‍🎓 Автор проекта
 
