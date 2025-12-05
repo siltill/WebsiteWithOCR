@@ -40,7 +40,7 @@ project-root/
 ├── frontend.Dockerfile
 ├── docker-compose.yml
 └── README.md
-
+```
 🐳 Запуск через Docker
 1. Установить Docker Desktop
 
